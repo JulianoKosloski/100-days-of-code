@@ -44,3 +44,17 @@ with smtplib.SMTP("smtp.gmail.com") as connection: #smtp.live.com (for outlook) 
         )
 
 # connection.close()  not needed because we are using 'with'
+# 2500 -> +200 auxilio, +6%(150) -> 2850 
+# 3000 -> +200 auxilio, +6%(180) -> 3380 (on average)
+# 3500 -> +200 auxilio, +6%(210) -> 3910 
+
+#3380 
+# - 1500 (aluguel + cond) 
+# - 500 (contas) 
+# - 400 (comida/casa) 
+# = 980 
+# - 200(saídas) 
+# - 100(lazer) 
+# - (300 transporte) 
+# = 380
+
