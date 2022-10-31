@@ -18,14 +18,14 @@ print(data)
 url = "http://api.sunrise-sunset.org/json"
 lat = -25.480877 #curitiba
 lng = -49.304424
-params = {"lat": lat, "lng": lng}
+params = {"lat": lat, "lng": lng, "formatted": 0}
 response = re.get(url, params)
 response.raise_for_status()
 
 print(response.status_code)
 print(response.json())
 
-
+# if I was doing this through an url: "http://api.sunrise-sunset.org/json?lat=2321312&lng=321321321"
 # 200 response code = success
 # 404 response code = doesn't exist
 # 1xx response code = something wrong is happening
