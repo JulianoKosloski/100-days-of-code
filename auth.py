@@ -15,7 +15,8 @@ params = {
 }
 
 response = re.get(weatherEndpoint, params)
-print(response.json())
+resJSON = response.json()
+print("This is the response:\n ", resJSON)
 
 
 
