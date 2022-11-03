@@ -16,7 +16,12 @@ params = {
 
 response = re.get(weatherEndpoint, params)
 resJSON = response.json()
-print("This is the response:\n ", resJSON)
+# print("This is the response:\n ", resJSON)
+
+print("This the current temperature in Celsius: ")
+print(round(resJSON['list'][1]['main']['temp'] - 273.0))
+print("...but it feels like:\n")
+print(round(resJSON['list'][1]['main']['feels_like'] - 273.0, ndigits = 1))
 
 
 
